@@ -4,8 +4,9 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter} from 'react-router-dom';
-import 'font-awesome/css/font-awesome.min.css';
 //estilos e iconos:
+import 'font-awesome/css/font-awesome.min.css';
+import 'animate.css/animate.min.css';
 
 
 const WithRouter = () => (

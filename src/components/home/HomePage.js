@@ -8,6 +8,7 @@ export class HomePage extends Component{
             <div style={{position:'relative'}}>
                 <HomeTop/>
                 <HomeBody/>
+
             </div>
         );
     }
