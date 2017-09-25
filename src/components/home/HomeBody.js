@@ -16,7 +16,7 @@ const HomeBody = ({props}) => {
 
 const styles = {
     name: {
-        backgroundColor:'black',
+        backgroundColor:' #efefed',
         position:'relative',
         zIndex:2,
         top:'100vh',

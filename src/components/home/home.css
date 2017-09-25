@@ -1,3 +1,5 @@
+
+
 /*HomeTop*/
 .home-container{
     display: flex;
@@ -19,17 +21,23 @@
 }
 
 .home-item.uno{
-    background-color:red;
+    /*background-color:red;*/
     flex:3;
-    order:1
+    order:1;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../../assets/bg.jpeg');
+    background-size: cover;
 }
 .home-item.dos{
-    background-color:blue;
-    flex:2;
-    order:2
+    background-color:transparent;
+    flex:0;
+    order:2;
+    text-align: left;
+    padding-left: 20px;
 }
 .home-item.tres{
-    background-color:green;
+    background-color:#efefed;
     flex:1;
     order:3
 }
@@ -44,7 +52,174 @@
     .home-item.uno{
         order:2;
     }
+    .home-container{
+        position: fixed;
+    }
 }
 
 /*Botones*/
+
+
+/*Video*/
+.home-item.uno .video-loop{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left: 0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+@media(max-width: 600px){
+    .home-item.uno{
+        flex: 3;
+
+    }
+    .home-item.dos{
+        flex: 1;
+
+    }
+    .home-item.tres{
+        flex: 0;
+
+    }
+    .home-item.uno .video-loop{
+        display: none;
+    }
+    .home-container{
+        position: inherit;
+    }
+}
+
+/*Seccion dos estilos de el texto*/
+
+.home-item.dos h2{
+    font-size: 300%;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+.home-item.dos h3{
+    font-size: 180%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:red;
+}
+
+.home-item.dos .action-call{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.home-item.dos .action-call a{
+    font-size: 130%;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+
+
+
+
+.home-item.dos p{
+    font-size: 150%;
+    padding-left: 10px;
+    padding-right: 100px;
+    color:grey;
+    margin-bottom: 35px;
+}
+
+@media(max-width: 600px){
+    .home-item.dos{
+        padding-left: 0;
+    }
+    .home-item.dos .action-call{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-item.dos p{
+        font-size: 120%;
+        padding-right: 10px;
+    }
+    .home-item.dos h2{
+        font-size: 200%;
+    }
+}
+
+@media(min-width: 1025px){
+    .home-item.uno{
+        flex:2;
+    }
+    .home-item.dos{
+        flex:2;
+        padding-top: 50px;
+        /*max-width: 800px;*/
+    }
+    .home-item.tres{
+        flex:1;
+        max-width: 800px;
+    }
+
+    .home-mailin{
+        text-align: left;
+        /*margin-left: 20px;*/
+    }
+
+}
+
+@media(min-width: 2000px){
+    .home-item.tres{
+        flex:2;
+        max-width: 800px;
+    }
+
+}
+
+@media(max-width: 1024px){
+    .home-mailin{
+        display: none;
+    }
+
+}
+
+
+/*mailing action*/
+.home-mailin{
+    width: 100%;
+    text-align: center;
+    /*margin-left: 20px;*/
+    margin-bottom: 20px;
+}
+
+.home-mailin h4{
+    font-size: 150%;
+}
+
+.home-mailin input{
+    line-height: 1.5em;
+    padding: 10px 21px 11px 21px;
+    outline: none;
+    border-bottom: solid 1px transparent;
+    -webkit-appearance: none;
+    background: #efefed;
+    color:#414042;
+    width: 280px;
+    display: inline-block;
+    height: 30px;
+    margin: 0;
+    font-size: 150%;
+    border:none;
+}
+
+.home-mailin a{
+    margin: 0;
+    padding: 0;
+}
+
+
 

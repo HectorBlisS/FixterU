@@ -7,6 +7,7 @@
     width: auto;
     min-width: 178px;
     z-index: 3;
+    background-color: #efefed;
 }
 
 .home-side-bar img{
@@ -29,10 +30,20 @@
     cursor: pointer;
 }
 
+/*Biger*/
+@media(min-width: 1025px ){
+    .home-side-bar{
+        height: 100vh;
+        background-color: #efefed;
+    }
+}
+
 /*Desktop*/
 @media(max-width: 1255px){
     .home-side-bar{
         min-width: 100px;
+        height: auto;
+        min-height: 100%;
         right: 0;
     }
     .home-side-bar img{

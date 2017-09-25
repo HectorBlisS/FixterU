@@ -8,7 +8,7 @@ export const FixterButton = ({className, text, style, color, bgColor}) => {
         <a
             style={style ? style:
                 {
-                    padding: '15px;',
+                    padding: '15px',
                     cursor:'pointer',
                     color:!color?"white":color,
                     backgroundColor:!bgColor?"black":bgColor,

@@ -1,8 +1,10 @@
 @import './components/home/home.css';
 @import './components/nav/nav.css';
 
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -25,3 +27,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+/*Generales*/
+
+@media(max-width: 600px){
+  .no-show-mobile{
+    display: none;
+  }
+}
+
+@media(min-width: 600px){
+  .no-show-desktop{
+    display: none;
+  }
+}
+
+
