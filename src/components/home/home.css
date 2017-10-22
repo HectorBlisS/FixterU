@@ -1,4 +1,11 @@
 
+/*Body container general*/
+@media(min-width: 600px){
+    .home-body-container{
+        padding-right: 100px;
+    }
+}
+
 
 /*HomeTop*/
 .home-container{
@@ -24,14 +31,14 @@
     /*background-color:red;*/
     flex:3;
     order:1;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     background-image: url('../../assets/bg.jpeg');
     background-size: cover;
 }
 .home-item.dos{
     background-color:transparent;
-    flex:0;
+    flex:1;
     order:2;
     text-align: left;
     padding-left: 20px;
@@ -76,11 +83,13 @@
 
 @media(max-width: 600px){
     .home-item.uno{
-        flex: 3;
+        flex: 2;
+        height: auto;
+        min-height: 200px;
 
     }
     .home-item.dos{
-        flex: 1;
+        flex: 2;
 
     }
     .home-item.tres{
@@ -136,7 +145,7 @@
 
 @media(max-width: 600px){
     .home-item.dos{
-        padding-left: 0;
+        padding:0;
     }
     .home-item.dos .action-call{
         flex-direction: column;
@@ -169,6 +178,9 @@
         text-align: left;
         /*margin-left: 20px;*/
     }
+    .home-item.dos{
+        padding-right: 20px;
+    }
 
 }
 
@@ -184,6 +196,7 @@
     .home-mailin{
         display: none;
     }
+
 
 }
 
@@ -220,6 +233,261 @@
     margin: 0;
     padding: 0;
 }
+
+
+/*Home body portada de cursos*/
+.home-body-portada{
+    background-image: url('../../assets/cursos.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 444px;
+    width: auto;
+    min-width: 100%;
+    min-height: 444px;
+    position: relative;
+}
+
+.home-body-portada h2  {
+    font-size: 700%;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+
+}
+
+@media(max-width: 600px){
+    .home-body-portada{
+        min-height: 200px;
+        height: 200px;
+    }
+    .home-body-portada h2  {
+        font-size: 200%;
+
+    }
+    .home-body-portada-cover{
+        width: auto;
+        height:100%;
+        background: rgba(0,0,0,0.3);
+    }
+}
+
+/*accordions*/
+
+.accordion-closed{
+    padding: 40px 0 40px 60px;
+    background-color:#efefed;
+    font-size: 200%;
+    text-align: left;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    position: relative;
+    cursor: pointer;
+    animation: closeAccordion 1s ease;
+}
+
+.accordion-closed i{
+    font-size: 200%;
+    color:orange;
+    position: absolute;
+    right: 5%;
+    top:15%;
+
+}
+
+.accordion-open{
+    position: relative;
+    font-size: 200%;
+    text-align: left;
+    padding: 40px 0 40px 60px;
+    /*border-top: 1px solid grey;*/
+    border-bottom: 1px solid grey;
+
+    transition: all 1s ease;
+    animation: openAccordion 1s ease;
+}
+
+@media(max-width: 600px){
+    .accordion-open, .accordion-closed{
+        font-size: 100%;
+    }
+}
+
+.accordion-open i{
+    font-size: 200%;
+    color:orange;
+    position: absolute;
+    right: 50px;
+    top:20px;
+
+}
+
+.time p{
+    color:#adb2a8;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+
+}
+
+@keyframes openAccordion{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+        max-height: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        max-height: 600px;
+    }
+}
+
+@keyframes closeAccordion {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+        max-height: 600px;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        max-height: 120px;
+
+    }
+}
+
+/*mapa*/
+.map-dir{
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+}
+
+.map-dir h2{
+    border-bottom: 1px solid cadetblue;
+    font-size: 200%;
+    margin: 0;
+}
+.map-dir h3{
+    color:orangered;
+    font-size: 180%;
+    margin-top: 10px;
+}
+
+.map-dir p{
+    margin: 0;
+}
+
+.map-dir a{
+    color:orangered;
+}
+
+.map-imagen{
+    max-width: 50%;
+    transition: all 1s ease;
+}
+
+.map-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: openAccordion 1s ease;
+}
+
+
+
+/*enviroment section*/
+.enviroment{
+    background-image: url("http://dyvyma9xr6j4r.cloudfront.net/PAM_0347.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.enviroment h2{
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 300%;
+}
+
+.enviroment-cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(227,137,45,0.3);
+}
+
+.enviroment-main{
+    background: white;
+    padding-bottom: 100px;
+}
+
+.enviroment-info h3{
+    font-size: 150%;
+    font-weight: normal;
+    text-align: left;
+    padding: 20px;
+}
+
+.enviroment-flex{
+    display: flex;
+    align-items: center;
+}
+
+.enviroment-info p{
+    font-weight: lighter;
+    padding: 20px;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.enviroment-info span{
+    color:orangered;
+    font-weight: bolder;
+}
+.enviroment-info img{
+    max-width: 300px;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 600px){
+    .map-container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .map-imagen{
+        max-width: 100%;
+    }
+
+    .enviroment{
+        height: 200px;
+        /*margin-bottom: 100px;*/
+    }
+    .enviroment h2{
+        font-size: 180%;
+        left: 10px;
+    }
+
+    .enviroment-info img{
+        max-width: 100px;
+    }
+    .enviroment-info p{
+        font-size: 100%;
+    }
+}
+
+
 
 
 

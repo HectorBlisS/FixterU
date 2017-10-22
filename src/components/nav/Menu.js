@@ -32,8 +32,8 @@ const Menu = ({children, visible, toggleVisibility}) => {
 
 //Menu.propTypes = {};
 
-const styles = {
-    name: {}
-};
+//const styles = {
+  //  name: {}
+//};
 
 export default Menu;

@@ -24,7 +24,7 @@ export const NavBar = ({visibleMenu, toggleVisibility}) => {
             <FontAwesome
                 name="bars"
                 size="2x"
-                style={{color:'white', cursor:'pointer'}}
+                style={{color:'grey', cursor:'pointer'}}
                 onClick={toggleVisibility}
             />
 
@@ -41,8 +41,6 @@ export const NavBar = ({visibleMenu, toggleVisibility}) => {
 
 //SideBar.propTypes = {};
 
-const styles = {
-    boton: {
-        color:'white'
-    }
-};
+//const styles = {
+
+//};

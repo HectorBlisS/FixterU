@@ -49,9 +49,9 @@ const HomeTop = ({perro}) => {
     );
 };
 
-const styles = {
+//const styles = {
 
-};
+//};
 
 //HomeTop.propTypes = {};
 export default HomeTop;
