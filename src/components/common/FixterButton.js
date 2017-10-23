@@ -12,7 +12,9 @@ export const FixterButton = ({className, text, style, color, bgColor}) => {
                     cursor:'pointer',
                     color:!color?"white":color,
                     backgroundColor:!bgColor?"black":bgColor,
-                    minWidth:'80px'
+                    minWidth:'80px',
+                    maxWidth:"200px",
+                    textAlign:"center"
 
                 }
             }

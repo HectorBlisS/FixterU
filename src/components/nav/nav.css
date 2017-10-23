@@ -134,7 +134,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 50px 150px;
+    padding: 50px 100px;
 
 }
 
@@ -169,7 +169,7 @@
 }
 
 .nav-lista li{
-    font-size: 300%;
+    font-size: 250%;
     font-weight: bold;
     padding: 10px 0;
     border-bottom: 1px solid #adb2a8;
@@ -202,6 +202,11 @@
         width: 90%;
         order:1;
     }
+
+    .nav-lista li{
+        font-size: 200%;
+    }
+
     .nav-aplica{
         order:2;
     }

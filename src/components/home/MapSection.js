@@ -36,7 +36,4 @@ export const MapSection = ({props}) => {
 
 //MapSection.propTypes = {};
 
-const styles = {
-
-};
 
